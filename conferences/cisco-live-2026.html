@@ -216,6 +216,18 @@
             .fact-grid { grid-template-columns: 1fr; }
             .conf-meta { gap: 10px; }
         }
+    
+    .breadcrumb { background: #f0f4f8; padding: 10px 0; font-size: 0.85rem; }
+    .breadcrumb a { color: #0057b8; text-decoration: none; }
+    .breadcrumb span { color: #888; margin: 0 6px; }
+    .related-section { margin: 48px 0 0; border-top: 2px solid #eee; padding-top: 32px; }
+    .related-section h2 { font-size: 1.3rem; margin-bottom: 16px; color: #1a1a2e; border-left: 4px solid #0057b8; padding-left: 14px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+    .related-link { display: flex; flex-direction: column; padding: 14px 18px; border: 1px solid #e0e0e0; border-radius: 8px; text-decoration: none; color: inherit; background: #fafafa; }
+    .related-link:hover { border-color: #0057b8; background: #f0f7ff; }
+    .related-link strong { font-size: 0.95rem; color: #1a1a2e; margin-bottom: 4px; }
+    .related-link span { font-size: 0.8rem; color: #666; }
+
     </style>
 </head>
 <body>
@@ -228,6 +240,13 @@
             </nav>
         </div>
     </header>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <div class="container">
+            <a href="/">Home</a> <span>›</span>
+            <a href="/conferences">Conferences</a> <span>›</span>
+            <span>Cisco Live 2026</span>
+        </div>
+    </nav>
 
     <section class="conf-hero">
         <div class="container">
@@ -389,6 +408,18 @@
                 <a href="https://www.expedia.com/Hotel-Search?destination=Mandalay+Bay+Convention+Center+Las+Vegas&startDate=2026-05-30&endDate=2026-06-05&adults=1&clickref=1110l36Chm4K&affcid=US.DIRECT.PHG.1011l415534.1100l68075&ref_id=1110l36Chm4K&my_ad=AFF.US.DIRECT.PHG.1011l415534.1100l68075&afflid=1110l36Chm4K&affdtl=PHG.1110l36Chm4K.PZiam2YfQK" class="cta" target="_blank" rel="nofollow noopener">See All Available Hotels →</a>
             </div>
 
+        
+    <div class="related-section">
+        <h2>Other Conference Hotel Guides</h2>
+        <div class="related-grid">
+<a href="/conferences/dell-technologies-world-2026" class="related-link"><strong>Dell Technologies World 2026</strong><span>Las Vegas · May 18–21</span></a>
+<a href="/conferences/black-hat-2026" class="related-link"><strong>Black Hat USA 2026</strong><span>Las Vegas · Aug 1–6</span></a>
+<a href="/conferences/ai4-2026" class="related-link"><strong>Ai4 2026</strong><span>Las Vegas · Aug 4–6</span></a>
+<a href="/conferences/dreamforce-2026" class="related-link"><strong>Dreamforce 2026</strong><span>San Francisco · Sep 15–17</span></a>
+<a href="/conferences/aws-reinvent-2026" class="related-link"><strong>AWS re:Invent 2026</strong><span>Las Vegas · Nov 30–Dec 4</span></a>
+<a href="/conferences/ces-2027" class="related-link"><strong>CES 2027</strong><span>Las Vegas · Jan 6–9</span></a>
+        </div>
+    </div>
         </div>
     </div>
 

@@ -19,17 +19,20 @@
         .hub-hero h1{font-size:2rem;margin-bottom:12px}
         .hub-hero p{color:#d0e8ff;font-size:1.05rem;max-width:640px}
         .content{padding:48px 0}
-        .container{max-width:900px;margin:0 auto;padding:0 20px}
-        .year-label{font-size:0.8rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#888;margin:32px 0 12px}
-        .conf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-bottom:40px}
+        .container{max-width:960px;margin:0 auto;padding:0 20px}
+        .year-label{font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#888;margin:36px 0 14px;padding-left:2px}
+        .conf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:8px}
         .conf-tile{display:block;border:1px solid #e0e0e0;border-radius:10px;padding:20px 22px;text-decoration:none;color:inherit;background:white;transition:all .15s}
         .conf-tile:hover{border-color:#0057b8;box-shadow:0 3px 14px rgba(0,87,184,0.12);transform:translateY(-2px)}
-        .conf-tile .badge{display:inline-block;font-size:0.7rem;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:10px;background:#d4edda;color:#155724}
-        .conf-tile .badge.soon{background:#fff3cd;color:#856404}
-        .conf-tile h3{font-size:1rem;margin:0 0 6px;color:#1a1a2e}
-        .conf-tile .meta{font-size:0.82rem;color:#666;margin-bottom:8px}
+        .conf-tile .badge{display:inline-block;font-size:0.7rem;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:10px}
+        .badge-live{background:#d4edda;color:#155724}
+        .badge-plan{background:#fff3cd;color:#856404}
+        .conf-tile h3{font-size:1rem;margin:0 0 5px;color:#1a1a2e}
+        .conf-tile .meta{font-size:0.8rem;color:#666;margin-bottom:7px}
         .conf-tile .desc{font-size:0.85rem;color:#555;line-height:1.5;margin:0}
         .conf-tile .arrow{display:block;margin-top:12px;font-size:0.85rem;color:#0057b8;font-weight:600}
+        h2{font-size:1.3rem;color:#1a1a2e;border-left:4px solid #0057b8;padding-left:12px;margin:40px 0 14px}
+        p{line-height:1.7;color:#444}
         footer{background:#1a1a2e;color:#aaa;text-align:center;padding:32px 20px;font-size:0.85rem}
         footer a{color:#aaa}
         header{background:#1a1a2e;padding:16px 0}
@@ -39,9 +42,25 @@
         nav a{color:#aaa;text-decoration:none;font-size:0.9rem}
         nav a:hover{color:white}
         header .container{display:flex;flex-direction:column}
-        h2{font-size:1.4rem;color:#1a1a2e;border-left:4px solid #0057b8;padding-left:12px;margin:40px 0 16px}
-        p{line-height:1.7;color:#444}
     </style>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"ItemList","name":"Tech Conference Hotel Guides 2026–2027",
+    "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"RSA Conference 2026 Hotels","url":"https://conferencehotels.net/conferences/rsa-conference-2026"},
+        {"@type":"ListItem","position":2,"name":"Google Cloud Next 2026 Hotels","url":"https://conferencehotels.net/conferences/google-cloud-next-2026"},
+        {"@type":"ListItem","position":3,"name":"Dell Technologies World 2026 Hotels","url":"https://conferencehotels.net/conferences/dell-technologies-world-2026"},
+        {"@type":"ListItem","position":4,"name":"Cisco Live 2026 Hotels","url":"https://conferencehotels.net/conferences/cisco-live-2026"},
+        {"@type":"ListItem","position":5,"name":"Black Hat USA 2026 Hotels","url":"https://conferencehotels.net/conferences/black-hat-2026"},
+        {"@type":"ListItem","position":6,"name":"Ai4 2026 Hotels","url":"https://conferencehotels.net/conferences/ai4-2026"},
+        {"@type":"ListItem","position":7,"name":"DEF CON 34 Hotels","url":"https://conferencehotels.net/conferences/defcon-2026"},
+        {"@type":"ListItem","position":8,"name":"Dreamforce 2026 Hotels","url":"https://conferencehotels.net/conferences/dreamforce-2026"},
+        {"@type":"ListItem","position":9,"name":"Money20/20 USA 2026 Hotels","url":"https://conferencehotels.net/conferences/money20-20-2026"},
+        {"@type":"ListItem","position":10,"name":"KubeCon 2026 Hotels","url":"https://conferencehotels.net/conferences/kubecon-2026"},
+        {"@type":"ListItem","position":11,"name":"Microsoft Ignite 2026 Hotels","url":"https://conferencehotels.net/conferences/microsoft-ignite-2026"},
+        {"@type":"ListItem","position":12,"name":"AWS re:Invent 2026 Hotels","url":"https://conferencehotels.net/conferences/aws-reinvent-2026"},
+        {"@type":"ListItem","position":13,"name":"CES 2027 Hotels","url":"https://conferencehotels.net/conferences/ces-2027"}
+    ]}
+    </script>
 </head>
 <body>
     <header>
@@ -50,97 +69,140 @@
             <nav><a href="/">Home</a><a href="/conferences">All Conferences</a></nav>
         </div>
     </header>
-    <nav class="breadcrumb" aria-label="breadcrumb">
+    <nav class="breadcrumb">
         <div class="container">
-            <a href="/">Home</a> <span class="sep">›</span>
-            <span>Conferences</span>
+            <a href="/">Home</a> <span class="sep">›</span> <span>Conferences</span>
         </div>
     </nav>
 
     <section class="hub-hero">
         <div class="container">
             <h1>Tech Conference Hotel Guides 2026–2027</h1>
-            <p>Every guide has verified venue details, real hotel IDs, and direct Expedia booking links pre-filled with conference dates. No generic lists — just the hotels that actually make sense for each event.</p>
+            <p>13 conferences covered. Every guide has verified venue details, correct hotel IDs, and direct Expedia booking links pre-filled with conference dates.</p>
         </div>
     </section>
 
     <div class="content">
         <div class="container">
 
-            <div class="year-label">Las Vegas — 2026</div>
+            <div class="year-label">March – April 2026</div>
             <div class="conf-grid">
-
-                <a href="/conferences/cisco-live-2026" class="conf-tile">
-                    <span class="badge">Booking Now</span>
-                    <h3>Cisco Live 2026</h3>
-                    <div class="meta">May 31–Jun 4 · Mandalay Bay Convention Center</div>
-                    <p class="desc">28,000 IT pros. Free tram to Luxor/Excalibur. Full walkability guide.</p>
+                <a href="/conferences/rsa-conference-2026" class="conf-tile">
+                    <span class="badge badge-live">Past — March 2026</span>
+                    <h3>RSA Conference 2026</h3>
+                    <div class="meta">Mar 23–26 · Moscone Center, San Francisco</div>
+                    <p class="desc">44,000+ security professionals. SF Marriott Marquis is directly adjacent to Moscone.</p>
                     <span class="arrow">View guide →</span>
                 </a>
-
-                <a href="/conferences/dell-technologies-world-2026" class="conf-tile">
-                    <span class="badge">Booking Now</span>
-                    <h3>Dell Technologies World 2026</h3>
-                    <div class="meta">May 18–21 · The Venetian Expo Center</div>
-                    <p class="desc">15,000 attendees. Venetian and Palazzo are on-site. Wynn nearby.</p>
+                <a href="/conferences/google-cloud-next-2026" class="conf-tile">
+                    <span class="badge badge-live">Past — April 2026</span>
+                    <h3 style="border-color:#ff6600">Google Cloud Next 2026</h3>
+                    <div class="meta">Apr 22–24 · Mandalay Bay Convention Center, Las Vegas</div>
+                    <p class="desc">30,000+ cloud pros. Same venue as Cisco Live — Mandalay Bay on-site is the play.</p>
                     <span class="arrow">View guide →</span>
                 </a>
-
-                <a href="/conferences/black-hat-2026" class="conf-tile">
-                    <span class="badge">Booking Now</span>
-                    <h3>Black Hat USA 2026</h3>
-                    <div class="meta">Aug 1–6 · Mandalay Bay Convention Center</div>
-                    <p class="desc">20,000 security pros. Same venue as Cisco Live. DEF CON follows immediately.</p>
-                    <span class="arrow">View guide →</span>
-                </a>
-
-                <a href="/conferences/ai4-2026" class="conf-tile">
-                    <span class="badge">Booking Now</span>
-                    <h3>Ai4 2026</h3>
-                    <div class="meta">Aug 4–6 · The Venetian Resort</div>
-                    <p class="desc">12,000 AI executives. August = 104°F. Stay connected or suffer.</p>
-                    <span class="arrow">View guide →</span>
-                </a>
-
-                <a href="/conferences/aws-reinvent-2026" class="conf-tile">
-                    <span class="badge">Booking Now</span>
-                    <h3>AWS re:Invent 2026</h3>
-                    <div class="meta">Nov 30–Dec 4 · 5 Venues across Strip</div>
-                    <p class="desc">50,000 cloud pros. Which hotel depends on your sessions. Full breakdown.</p>
-                    <span class="arrow">View guide →</span>
-                </a>
-
             </div>
 
-            <div class="year-label">San Francisco — 2026</div>
+            <div class="year-label">May – June 2026</div>
             <div class="conf-grid">
+                <a href="/conferences/dell-technologies-world-2026" class="conf-tile">
+                    <span class="badge badge-live">Past — May 2026</span>
+                    <h3>Dell Technologies World 2026</h3>
+                    <div class="meta">May 18–21 · The Venetian Expo, Las Vegas</div>
+                    <p class="desc">15,000 attendees. Venetian and Palazzo are on-site. Wynn is a short walk north.</p>
+                    <span class="arrow">View guide →</span>
+                </a>
+                <a href="/conferences/cisco-live-2026" class="conf-tile">
+                    <span class="badge badge-live">Booking Now</span>
+                    <h3>Cisco Live 2026</h3>
+                    <div class="meta">May 31–Jun 4 · Mandalay Bay Convention Center, Las Vegas</div>
+                    <p class="desc">28,000+ IT pros. Free tram to Luxor and Excalibur. Full walkability guide.</p>
+                    <span class="arrow">View guide →</span>
+                </a>
+            </div>
 
+            <div class="year-label">August 2026</div>
+            <div class="conf-grid">
+                <a href="/conferences/black-hat-2026" class="conf-tile">
+                    <span class="badge badge-live">Booking Now</span>
+                    <h3>Black Hat USA 2026</h3>
+                    <div class="meta">Aug 1–6 · Mandalay Bay Convention Center, Las Vegas</div>
+                    <p class="desc">20,000+ security pros. 104°F heat. Free tram tiers. DEF CON overlap covered.</p>
+                    <span class="arrow">View guide →</span>
+                </a>
+                <a href="/conferences/ai4-2026" class="conf-tile">
+                    <span class="badge badge-live">Booking Now</span>
+                    <h3>Ai4 2026</h3>
+                    <div class="meta">Aug 4–6 · The Venetian Resort, Las Vegas</div>
+                    <p class="desc">12,000+ AI executives. August peak heat — staying connected is non-negotiable.</p>
+                    <span class="arrow">View guide →</span>
+                </a>
+                <a href="/conferences/defcon-2026" class="conf-tile">
+                    <span class="badge badge-live">Booking Now</span>
+                    <h3>DEF CON 34</h3>
+                    <div class="meta">Aug 6–9 · Las Vegas Convention Center</div>
+                    <p class="desc">30,000 hackers. Cash-only badges. LVCC mid-Strip — Westgate connects directly.</p>
+                    <span class="arrow">View guide →</span>
+                </a>
+            </div>
+
+            <div class="year-label">September – October 2026</div>
+            <div class="conf-grid">
                 <a href="/conferences/dreamforce-2026" class="conf-tile">
-                    <span class="badge">Booking Now</span>
+                    <span class="badge badge-live">Booking Now</span>
                     <h3>Dreamforce 2026</h3>
                     <div class="meta">Sep 15–17 · Moscone Center, San Francisco</div>
-                    <p class="desc">40,000 Salesforce professionals. Hotels sell out city-wide. Book early.</p>
+                    <p class="desc">40,000+ Salesforce pros. SF hotels sell out city-wide. Book months early.</p>
                     <span class="arrow">View guide →</span>
                 </a>
-
+                <a href="/conferences/money20-20-2026" class="conf-tile">
+                    <span class="badge badge-live">Booking Now</span>
+                    <h3>Money20/20 USA 2026</h3>
+                    <div class="meta">Oct 18–21 · The Venetian Expo, Las Vegas</div>
+                    <p class="desc">13,000 fintech leaders. 1-in-3 C-suite. Staying on-site is the deal-flow play.</p>
+                    <span class="arrow">View guide →</span>
+                </a>
             </div>
 
-            <div class="year-label">Las Vegas — 2027</div>
+            <div class="year-label">November – December 2026</div>
             <div class="conf-grid">
-
-                <a href="/conferences/ces-2027" class="conf-tile">
-                    <span class="badge">Booking Now</span>
-                    <h3>CES 2027</h3>
-                    <div class="meta">Jan 6–9 · Las Vegas Convention Center</div>
-                    <p class="desc">138,000 attendees. Westgate connects directly. Pleasant January weather.</p>
+                <a href="/conferences/kubecon-2026" class="conf-tile">
+                    <span class="badge badge-live">Booking Now</span>
+                    <h3>KubeCon + CloudNativeCon NA 2026</h3>
+                    <div class="meta">Nov 9–12 · Salt Palace Convention Center, Salt Lake City</div>
+                    <p class="desc">12,000+ cloud-native engineers. Hyatt Regency connects directly to Salt Palace.</p>
                     <span class="arrow">View guide →</span>
                 </a>
+                <a href="/conferences/microsoft-ignite-2026" class="conf-tile">
+                    <span class="badge badge-live">Booking Now</span>
+                    <h3>Microsoft Ignite 2026</h3>
+                    <div class="meta">Nov 17–20 · Moscone Center, San Francisco</div>
+                    <p class="desc">20,000+ Microsoft/Azure professionals. Same SF hotel strategy as Dreamforce.</p>
+                    <span class="arrow">View guide →</span>
+                </a>
+                <a href="/conferences/aws-reinvent-2026" class="conf-tile">
+                    <span class="badge badge-live">Booking Now</span>
+                    <h3>AWS re:Invent 2026</h3>
+                    <div class="meta">Nov 30–Dec 4 · 5 Venues, Las Vegas Strip</div>
+                    <p class="desc">50,000+ cloud pros across 5 venues. Which hotel depends on your sessions.</p>
+                    <span class="arrow">View guide →</span>
+                </a>
+            </div>
 
+            <div class="year-label">January 2027</div>
+            <div class="conf-grid">
+                <a href="/conferences/ces-2027" class="conf-tile">
+                    <span class="badge badge-plan">Plan Ahead</span>
+                    <h3>CES 2027</h3>
+                    <div class="meta">Jan 6–9 · Las Vegas Convention Center</div>
+                    <p class="desc">138,000 attendees. Westgate connects directly to LVCC. Book 6+ months out.</p>
+                    <span class="arrow">View guide →</span>
+                </a>
             </div>
 
             <h2>Why These Guides Exist</h2>
-            <p>Expedia and Booking.com show you hotels sorted by price or rating. They don't tell you that the hotel that looks "1 mile from the venue" is actually a 30-minute walk through casino floors in 100°F heat — or that there's a free tram that makes a budget hotel perfectly viable.</p>
-            <p>Every guide on this site is built with the actual venue location, real transport options (free trams, monorails, AWS shuttles), and direct booking links that go to that specific hotel's page with conference dates pre-filled. No generic city searches. No fake hotel IDs.</p>
+            <p>Expedia shows you hotels sorted by price. It doesn't tell you the hotel "1 mile from the venue" is a 30-minute walk through casino floors in 100°F heat — or that a free tram makes a budget hotel perfectly viable. Every guide here has the actual transport situation, real hotel IDs, and booking links that go to that specific hotel with conference dates already filled in.</p>
+
         </div>
     </div>
 
